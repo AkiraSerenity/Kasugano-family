@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0e0e14;
+  color: #f5f5f5;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(rgba(40,0,80,0.75), rgba(10,0,20,0.9)),
+    url("images/bg.jpg") center / cover no-repeat;
+  padding: 90px 10%;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.hero-img {
+  width: 230px;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  font-size: 16px;
+  font-weight: 800; /* INI YANG MEMBUAT TEBAL */
+  opacity: 0.9;
+}
+
+/* SECTION */
+section {
+  padding: 70px 8%;
+}
+
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+}
+
+.dark {
+  background: #0a0a12;
+}
+
+/* BOX */
+.box {
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+/* MEMBER */
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+  gap: 25px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* ROLE */
+.role {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.role.admin {
+  background: rgba(150, 70, 255, 0.25);
+  color: #d2b7ff;
+}
+
+.role.member {
+  background: rgba(255, 255, 255, 0.15);
+  color: #dddddd;
+}
+
+.member h4 {
+  margin-top: 6px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.username {
+  display: block;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* FOOTER */
+footer {
+  background: #07070c;
+  text-align: center;
+  padding: 35px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-img {
+    width: 180px;
+  }
+  
+  .copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+}
+
+}
