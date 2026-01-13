@@ -3,45 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Kasugano Family</title>
-
-  <!-- GOOGLE FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO -->
+<!-- HEADER / HERO -->
 <header class="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">Kasugano Family</h1>
-
-    <img src="images/hero.jpg" alt="Kasugano Family" class="hero-img">
-
-    <p class="hero-text">
-      Kasugano Family adalah komunitas yang bergerak di Tiktok dalam bidang
-      Anime, Donghua, Game, Preset, GFX, DLL
-    </p>
+  <div class="hero-logo">
+    <img src="images/logo.png" alt="Kasugano Family Logo">
+    <h1>Kasugano Family</h1>
   </div>
+  <p class="hero-text">Komunitas kreatif di Tiktok, fokus pada Anime, Donghua, Game, GFX & Editing</p>
 </header>
 
-<!-- PROFILE -->
-<section>
-  <h2 class="section-title">Profile Kasugano Family</h2>
-
+<!-- PROFILE SECTION -->
+<section class="section profile">
+  <h2 class="section-title">Tentang Kami</h2>
   <div class="grid-3">
     <div class="box">
       <h3>Visi</h3>
       <p>Membangun komunitas kreatif yang solid dan inspiratif.</p>
     </div>
-
     <div class="box">
       <h3>Misi</h3>
-      <p>Mengembangkan kreativitas anggota melalui konten digital.</p>
+      <p>Mengembangkan kreativitas anggota melalui konten digital dan edukasi kreatif.</p>
     </div>
-
     <div class="box">
       <h3>Fokus</h3>
       <p>Anime, Donghua, Game, Preset, GFX, dan Editing.</p>
@@ -49,132 +35,83 @@
   </div>
 </section>
 
-<!-- KEGIATAN -->
-<section class="dark">
-  <h2 class="section-title">Kelakuan Member Kasugano Family</h2>
-
+<!-- KEGIATAN SECTION -->
+<section class="section dark">
+  <h2 class="section-title">Kegiatan Kami</h2>
   <div class="grid-3">
     <div class="box">
       <h3>Edit Video</h3>
       <p>Melakukan editing untuk diposting di media sosial.</p>
     </div>
-
     <div class="box">
       <h3>Sharing Pengalaman</h3>
-      <p>Saling berbagi pengalaman untuk meningkatkan wawasan.</p>
+      <p>Saling berbagi pengalaman dan tips untuk meningkatkan skill.</p>
     </div>
-
     <div class="box">
       <h3>Event Organizer</h3>
-      <p>Kasugano Family juga terkadang mengadakan event.</p>
+      <p>Menyelenggarakan event online & offline untuk komunitas.</p>
     </div>
   </div>
 </section>
 
-<!-- ADMIN & MEMBER -->
-<section>
+<!-- SEARCH & MEMBER SECTION -->
+<section class="section member-section">
   <h2 class="section-title">Admin & Member</h2>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search Member...">
+  </div>
 
-  <div class="member-grid">
-
-    <div class="member">
-      <img src="images/admin1.jpg">
+  <div class="member-grid" id="memberList">
+    <div class="member" data-nickname="Sora">
+      <img src="images/admin1.jpg" alt="Sora">
       <span class="role admin">Admin</span>
       <h4>Sora</h4>
       <span class="username">@kasugano.sora52</span>
     </div>
 
-    <div class="member">
-      <img src="images/admin2.webp">
+    <div class="member" data-nickname="Shora">
+      <img src="images/admin2.webp" alt="Shora">
       <span class="role admin">Admin</span>
       <h4>Shora</h4>
       <span class="username">@codename_shora.v02</span>
     </div>
 
-    <div class="member">
-      <img src="images/admin3.jfif">
-      <span class="role admin">Admin</span>
-      <h4>Zero?</h4>
-      <span class="username">@zero</span>
-    </div>
-
-    <div class="member">
-      <img src="images/member1.png">
+    <div class="member" data-nickname="Fuyi">
+      <img src="images/member1.png" alt="Fuyi">
       <span class="role member">Member</span>
       <h4>Fuyi</h4>
       <span class="username">@fuyii_npc</span>
     </div>
 
-    <div class="member">
-      <img src="images/member2.png">
+    <div class="member" data-nickname="Ezan">
+      <img src="images/member2.png" alt="Ezan">
       <span class="role member">Member</span>
       <h4>Ezan</h4>
       <span class="username">@ezan_xd</span>
     </div>
 
-    <div class="member">
-      <img src="images/member3.jpg">
+    <div class="member" data-nickname="V3iin">
+      <img src="images/member3.jpg" alt="V3iin">
       <span class="role member">Member</span>
       <h4>V3iin</h4>
       <span class="username">@iyainirhmd</span>
     </div>
 
-    <div class="member">
-      <img src="images/member4.jpg">
+    <div class="member" data-nickname="Shaglen">
+      <img src="images/member4.jpg" alt="Shaglen">
       <span class="role member">Member</span>
       <h4>Shaglen</h4>
       <span class="username">@xmj.shaglen</span>
     </div>
-
-    <div class="member">
-      <img src="images/member5.jpg">
-      <span class="role member">Member</span>
-      <h4>Valen</h4>
-      <span class="username">@naineyuko</span>
-    </div>
-
-    <div class="member">
-      <img src="images/member6.jpg">
-      <span class="role member">Member</span>
-      <h4>Yuuta</h4>
-      <span class="username">@yuutaxml_</span>
-    </div>
-
-    <div class="member">
-      <img src="images/member7.jpg">
-      <span class="role member">Member</span>
-      <h4>Member</h4>
-      <span class="username">@member7</span>
-    </div>
-
-    <div class="member">
-  <img src="images/member8.jpg">
-  <span class="role member">Member</span>
-  <h4>Member</h4>
-  <span class="username">@member8</span>
-</div>
-
-<div class="member">
-  <img src="images/member9.jpg">
-  <span class="role member">Member</span>
-  <h4>Member</h4>
-  <span class="username">@member9</span>
-</div>
-
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>Tiktok: @kasugano.official</p>
-  <p>WA: 0852-3240-6495</p>
-  <p>Email: Kasuganofamilyy@gmail.com | kasuganostore@gmail.com</p>
-
-  <div class="copyright">
-    © 2024 Kasugano Family. All Rights Reserved.
-  </div>
+  <p>Tiktok: @kasugano.official | WA: 0852-3240-6495 | Email: Kasuganofamilyy@gmail.com</p>
+  <div class="copyright">© 2026 Kasugano Family. All Rights Reserved.</div>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
